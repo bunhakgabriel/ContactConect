@@ -1,0 +1,88 @@
+body{
+    background-color: lightslategrey;
+    font-family: sans-serif;
+    padding: 0px;
+}
+
+div.container{
+    background-color: #000000;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px auto 0px auto;
+    width: 500px;
+    height: auto;
+}
+
+h1{
+    margin: 30px;
+    color: #FE2E2E;
+    text-align: center;
+}
+
+header{
+    margin: -20px 0px 0px -10px;
+    background-color: #000000;
+}
+
+header ul{
+    list-style: none;
+    border: 1px solid black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: end;
+    column-gap: 15px;
+}
+
+ul li a{
+    color: white;
+}
+
+ul li a:hover{
+    color: darkgrey;
+}
+
+input{
+    width: 210px;
+    font-size: 1em;
+    margin: 40px auto;
+    color: white;
+    display: block;
+    background-color: #000000;
+    border: 0px;
+    border-bottom: 1px solid white;
+    padding: 5px;
+}
+
+button{
+    background-color: #000000;
+    padding: 10px 5px;
+    font-size: 1em;
+    color: white;
+    border: 1px solid white;
+    margin-left: 28%;
+}
+
+button:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: white;
+    color: black;
+}
+
+h3{
+    font-size: 1em;
+    padding: 5px 0px;
+    text-align: center;
+    width: 220px;
+    margin: 2px auto;
+}
+
+h3.success{
+    border: 1px solid green;
+    color: green;
+}
+
+h3.error{
+    border: 1px solid #FE2E2E;
+    color: #FE2E2E;
+}

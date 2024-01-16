@@ -1,0 +1,89 @@
+body{
+    background-color: lightslategrey;
+    font-family: sans-serif;
+    padding: 0px;
+}
+
+div.container{
+    background-color: #000000;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 50px auto;
+    width: 600px;
+    height: auto;
+}
+
+h1{
+    margin: 30px;
+    color: #FE2E2E;
+    text-align: center;
+}
+
+header{
+    margin: -20px 0px 0px -10px;
+    background-color: #000000;
+}
+
+header ul{
+    list-style: none;
+    border: 1px solid black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: end;
+    column-gap: 15px;
+}
+
+ul li a{
+    color: white;
+}
+
+ul li a:hover{
+    color: darkgrey;
+}
+
+table{
+    margin: 5px auto;
+    width: 550px;
+    border: 0px solid red;
+}       
+
+tr td{
+    text-align: center;
+    color: white;
+    border: 0px solid white;
+    padding: 5px 0px;
+}
+
+tr td.nome{
+
+}
+
+tr td.email{
+
+}
+
+table tr td.telefone{
+    width: 110px;
+}
+
+a{
+    color: red;
+}
+
+h3{
+    font-size: 1em;
+    padding: 5px 0px;
+    text-align: center;
+    width: 350px;
+    margin: 2px auto;
+}
+
+h3.success{
+    border: 1px solid green;
+    color: green;
+}
+
+h3.error{
+    border: 1px solid #FE2E2E;
+    color: #FE2E2E;
+}

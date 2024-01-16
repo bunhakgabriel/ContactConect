@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/logado.css"> 
+    <%# Não é necessario colocar a pasta 'public' no caminho do css pois o express automaticamente vai procurar um arquico css dentro de uma pasta public' %>
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <ul>
+            <li><a href="/criarContato">Criar Contato</a></li>
+            <li><a href="/logout">Sair</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+
+        <h1>Olá <%= user.email %>, seja Bem-Vindo</h1>
+
+        <% if(success.length > 0){ %>
+            <h3 class="success"><%= success %></h3>
+        <% } %>
+
+        <table>
+
+            <% if(contatos.length > 0) { %>
+                <tr>
+                    <td class="nome">Nome</td>
+                    <td class="email">Email</td>
+                    <td class="telefone">Telefone</td>
+                </tr>
+            <% contatos.forEach( contato => { %>
+                <tr>
+                    <td> <%= contato.nome + ' ' + contato.sobrenome %> </td>
+                    <td> <%= contato.email %> </td>
+                    <td> <%= contato.telefone %> </td>
+                    <td> <a href="/deletar/<%= contato._id %>">Excluir</a> </td>
+                </tr>
+            <% }) %>
+            <% } %>
+
+        </table>
+
+
+    </div>
+
+</body>
+</html>
