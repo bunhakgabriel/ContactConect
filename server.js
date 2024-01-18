@@ -41,8 +41,9 @@ app.set('views', path.resolve('./src/views'))
 app.use(express.static('public'))
 
 app.on('pronto', () => {
-    app.listen(2500, function(){
-        console.log('http://localhost:2500')
+    const port = process.env.PORT ? Number(process.env.PORT) : 3000
+    app.listen(port, function(){
+        console.log('Servidor iniciado com sucesso')
     })    
 })
 
