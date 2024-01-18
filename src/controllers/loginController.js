@@ -1,4 +1,5 @@
 //Rota de login (home)
+
 const Register = require('../models/loginModel')
 const moduloContato = require('../models/contatoModel')
 
